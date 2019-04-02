@@ -1,123 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Spinner?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="638.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ÜbersichtController">
+<BorderPane prefHeight="638.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UebersichtController">
    <center>
-      <TableView fx:id="table" BorderPane.alignment="CENTER">
-        <columns>
-          <TableColumn fx:id="id" prefWidth="186.0" text="Id" />
-          <TableColumn fx:id="name" prefWidth="213.0" text="Name" />
-            <TableColumn fx:id="farbe" prefWidth="158.0" text="Farbe" />
-            <TableColumn fx:id="anzahl" prefWidth="87.0" text="Anzahl" />
-        </columns>
-      </TableView>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="taschenrechner" alignment="CENTER" mnemonicParsing="false" onAction="#handleTaschenrechnerButton" text="Taschenrechner" />
+         </children>
+      </VBox>
    </center>
-   <bottom>
-      <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="859.0" spacing="7.0" BorderPane.alignment="CENTER">
-         <children>
-            <Button fx:id="hinzufügen" mnemonicParsing="false" onAction="#handleAddButton" text="Hinzufügen" />
-            <Button fx:id="delete" mnemonicParsing="false" onAction="#handleDeleteButton" text="Löschen" />
-            <Button fx:id="edit" mnemonicParsing="false" onAction="#handleEditButton" text="Bearbeiten" />
-            <Region prefHeight="200.0" prefWidth="200.0" />
-            <TextField fx:id="search" prefHeight="25.0" prefWidth="196.0" promptText="search" />
-         </children>
-         <opaqueInsets>
-            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-         </opaqueInsets>
-         <BorderPane.margin>
-            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-         </BorderPane.margin>
-      </HBox>
-   </bottom>
-   <right>
-      <HBox prefHeight="595.0" prefWidth="300.0" spacing="20.0" BorderPane.alignment="CENTER">
-         <children>
-            <VBox prefHeight="590.0" prefWidth="300.0">
-               <children>
-                  <HBox prefHeight="394.0" prefWidth="280.0" spacing="20.0">
-                     <children>
-                        <VBox prefHeight="570.0" prefWidth="130.0" spacing="2.0">
-                           <children>
-                              <Label fx:id="gr1" text="Label" visible="false" />
-                              <Spinner fx:id="spinner1" editable="true">
-                                 <VBox.margin>
-                                    <Insets bottom="40.0" />
-                                 </VBox.margin>
-                              </Spinner>
-                              <Label fx:id="gr2" text="Label" visible="false" />
-                              <Spinner fx:id="spinner2">
-                                 <VBox.margin>
-                                    <Insets bottom="40.0" />
-                                 </VBox.margin>
-                              </Spinner>
-                              <Label fx:id="gr3" text="Label" visible="false" />
-                              <Spinner fx:id="spinner3">
-                                 <VBox.margin>
-                                    <Insets bottom="40.0" />
-                                 </VBox.margin>
-                              </Spinner>
-                              <Label fx:id="gr4" text="Label" visible="false" />
-                              <Spinner fx:id="spinner4">
-                                 <VBox.margin>
-                                    <Insets bottom="40.0" />
-                                 </VBox.margin>
-                              </Spinner>
-                           </children>
-                        </VBox>
-                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="570.0" prefWidth="130.0" spacing="2.0">
-                           <children>
-                              <Label fx:id="gr5" text="Label" visible="false" />
-                              <Spinner fx:id="spinner5">
-                                 <VBox.margin>
-                                    <Insets bottom="40.0" />
-                                 </VBox.margin>
-                              </Spinner>
-                              <Label fx:id="gr6" text="Label" visible="false" />
-                              <Spinner fx:id="spinner6">
-                                 <VBox.margin>
-                                    <Insets bottom="40.0" />
-                                 </VBox.margin>
-                              </Spinner>
-                              <Label fx:id="gr7" text="Label" visible="false" />
-                              <Spinner fx:id="spinner7">
-                                 <VBox.margin>
-                                    <Insets bottom="40.0" />
-                                 </VBox.margin>
-                              </Spinner>
-                              <Label fx:id="gr8" text="Label" visible="false" />
-                              <Spinner fx:id="spinner8">
-                                 <VBox.margin>
-                                    <Insets bottom="40.0" />
-                                 </VBox.margin>
-                              </Spinner>
-                              <Button fx:id="save" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="25.0" prefWidth="51.0" text="Save">
-                                 <VBox.margin>
-                                    <Insets left="80.0" />
-                                 </VBox.margin>
-                              </Button>
-                           </children>
-                        </VBox>
-                     </children>
-                  </HBox>
-                  <ImageView fx:id="showImage" fitHeight="197.0" fitWidth="278.0" pickOnBounds="true" preserveRatio="true" />
-               </children>
-            </VBox>
-         </children>
-         <padding>
-            <Insets left="10.0" right="10.0" top="5.0" />
-         </padding>
-      </HBox>
-   </right>
 </BorderPane>
