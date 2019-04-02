@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -8,18 +10,151 @@
 
 <BorderPane prefHeight="638.0" prefWidth="945.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UebersichtController">
    <center>
-      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
          <children>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <TextField alignment="CENTER_RIGHT" editable="false" prefHeight="65.0" prefWidth="372.0" text="0">
+                  <TextField fx:id="textfield" alignment="CENTER_RIGHT" editable="false" prefHeight="94.0" prefWidth="459.0" text="0">
                      <font>
-                        <Font size="35.0" />
+                        <Font size="46.0" />
                      </font>
                   </TextField>
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button fx:id="button1" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="1">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button2" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="2">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button3" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="3">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button fx:id="button4" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="4">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button5" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="5">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button6" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="6">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button fx:id="button7" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="7">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button8" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="8">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button9" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="9">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="130.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button fx:id="buttonPlus" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="+">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonMinus" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="-">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonMal" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="*">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="buttonGeteilt" layoutX="259.0" layoutY="20.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="142.0" text="/">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
          </children>
       </VBox>
    </center>
